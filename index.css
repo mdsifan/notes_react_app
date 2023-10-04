@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* --dim-gray: #616163ff;
+--aquamarine: #44ffd2ff;
+--electric-blue: #87f6ffff;
+--light-cyan: #daf5ffff;
+--peach: #ffbfa0ff; */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 6px;
+}
+
+/* .header h1{
+  color: white;
+} */
+
+.toggle {
+  border: none;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.toggle:hover {
+  text-decoration: underline;
+}
+
+.darkmode{
+  background: black;
+}
+
+.darkmode h1{
+  color:white;
+}
+
+.container{
+  max-width: 960px;
+  padding:20px;
+  margin:0px auto;
+  min-height: 100vh;
+  /* background: #14213d; */
+}
+
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+
+.notes{
+ background: #44ffd2ff;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ min-height: 170px;
+ padding:15px;
+ border-radius:5px;
+ white-space: pre-wrap; /*to get space in notes */
+}
+.notes-footer{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.notes.add-note{
+  background:#87f6ffff;
+}
+
+textarea{
+  border:none;
+  background:#87f6ffff;
+  resize:none;
+}
+textarea:focus{
+  outline:none;
+}
+.save{
+  border:none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 7px;
+  font-weight: bold;
+}
+.save:hover{
+  text-decoration: underline;
+}
+.delete-icon{
+  cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  padding:5px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  background: rgb(219, 219, 226);
+}
+
+.search input{
+  width:95%;
+  border: none;
+  padding:5px;
+  background: rgb(219, 219, 226);
+}
+
+.search input:focus{
+  outline: none;
+}
